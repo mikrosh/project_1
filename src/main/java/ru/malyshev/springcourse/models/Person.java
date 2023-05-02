@@ -1,9 +1,22 @@
 package ru.malyshev.springcourse.models;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
+
 public class Person {
     private int id;
+
+    @NotEmpty(message = "Name should not be empty") //устанавливаем что имя не может быть пустым
+    @Size(min = 2, max = 30, message = "Name should be between 2 and 30 characters") //Устанавливаем мин и макс число символов в имени
     private String name;
+
+    @Min(value = 0, message = "Age should be greater than 0") //Установили мин. значние возраста
     private int age;
+
+    @NotEmpty(message = "Email should not be empty")
+    @Email(message = "You must provide valid email") //Валидатор email (не надо регулярки писать)
     private String email;
 
     public Person(int id, String name, int age, String email) {

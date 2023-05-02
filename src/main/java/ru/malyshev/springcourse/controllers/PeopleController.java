@@ -1,8 +1,10 @@
 package ru.malyshev.springcourse.controllers;
 
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import ru.malyshev.springcourse.dao.PersonDAO;
 import ru.malyshev.springcourse.models.Person;
@@ -39,7 +41,17 @@ public class PeopleController {
    }
 
    @PostMapping()
-   public String create(@ModelAttribute("person") Person person){
+   //@Valid включает проверку данного объекта по аннотациям указанным в его классе @ModelAttribute создает новый объект
+   // person значения из формы создания внедряет в этот объект, а затем помещает этот объект в модель,
+   // через которую мы его уже получаем в представлении. BindingResult вставляется сразу после объекта. который
+   // валидируем, если объект содержит ошибки валидации, то он внедряется в BindingResult,
+   // который тут же проверяется на ошибки, и если они есть, возвращаем представление в данном случае стартовой страницы,
+   // а на стартовой странице уже с помощью Thymeleaf показываем ошибки из этого объекта
+   public String create(@ModelAttribute("person") @Valid Person person,
+                        BindingResult bindingResult){
+        if(bindingResult.hasErrors())
+            return "people/new";
+
        personDAO.save(person);
        return "redirect:/people";
    }
@@ -51,7 +63,11 @@ public class PeopleController {
    }
 
    @PatchMapping("/{id}")
-    public String update(@ModelAttribute("person") Person person, @PathVariable("id") int id){
+    public String update(@ModelAttribute("person") @Valid Person person,
+                         BindingResult bindingResult, @PathVariable("id") int id){
+        if(bindingResult.hasErrors())
+            return "people/edit";
+
         personDAO.update(id, person);
         return "redirect:/people";
    }
