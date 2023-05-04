@@ -9,13 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29d1c1b8-9a45-4f45-91ae-d2bf0997d8f0" name="Changes" comment="Lesson-23 CRUD Extend. Формы создания, редактирования, удаления записей">
+    <list default="true" id="29d1c1b8-9a45-4f45-91ae-d2bf0997d8f0" name="Changes" comment="Lesson-24 CRUD Extend. Валидация форм! Сменил зависимость по валидациям с 8 на 6 версию т.к. с 8 версией не работало.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/malyshev/springcourse/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/malyshev/springcourse/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/malyshev/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/malyshev/springcourse/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +48,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "spring.configuration.checksum": "e7cdf23d95edfbd03bb87611083ea663"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e7cdf23d95edfbd03bb87611083ea663&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.74">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
@@ -181,7 +176,8 @@
       <workItem from="1682959468246" duration="7689000" />
       <workItem from="1682976227786" duration="2292000" />
       <workItem from="1683041631501" duration="374000" />
-      <workItem from="1683042021549" duration="6855000" />
+      <workItem from="1683042021549" duration="7506000" />
+      <workItem from="1683232478111" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson-21 First CRUD app.">
       <created>1682895049483</created>
@@ -211,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683048186709</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lesson-24 CRUD Extend. Валидация форм! Сменил зависимость по валидациям с 8 на 6 версию т.к. с 8 версией не работало.">
+      <created>1683057099883</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683057099883</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +235,7 @@
     <MESSAGE value="Lesson-21 First CRUD app." />
     <MESSAGE value="Lesson-22 CRUD App. Making Create and read" />
     <MESSAGE value="Lesson-23 CRUD Extend. Формы создания, редактирования, удаления записей" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson-23 CRUD Extend. Формы создания, редактирования, удаления записей" />
+    <MESSAGE value="Lesson-24 CRUD Extend. Валидация форм! Сменил зависимость по валидациям с 8 на 6 версию т.к. с 8 версией не работало." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson-24 CRUD Extend. Валидация форм! Сменил зависимость по валидациям с 8 на 6 версию т.к. с 8 версией не работало." />
   </component>
 </project>
