@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29d1c1b8-9a45-4f45-91ae-d2bf0997d8f0" name="Changes" comment="Lesson-27 Реализация JDBS-Template + Пишем свой собственный RowMaper">
+    <list default="true" id="29d1c1b8-9a45-4f45-91ae-d2bf0997d8f0" name="Changes" comment="Lesson-26 реализованы все методы CRUD с защитой от SQL-инъекций.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/malyshev/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/malyshev/springcourse/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/malyshev/springcourse/dao/PersonMapper.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,5 +285,9 @@
     <MESSAGE value="Lesson-26 реализованы все методы CRUD с защитой от SQL-инъекций." />
     <MESSAGE value="Lesson-27 Реализация JDBS-Template + Пишем свой собственный RowMaper" />
     <option name="LAST_COMMIT_MESSAGE" value="Lesson-27 Реализация JDBS-Template + Пишем свой собственный RowMaper" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
